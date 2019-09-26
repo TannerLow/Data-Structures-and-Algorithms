@@ -28,7 +28,7 @@ int main(){
 
     dist = random(0, n);//reset distribution range
     int key;
-//linear search 100
+//linear search 10k
     auto start = timer::now();
     for(int i = 0; i < 10000; i++){
         key = a[dist(eng)];
@@ -39,7 +39,7 @@ int main(){
     auto tmp = duration;
     printf("Linear Search Time:%gns\n", (double)duration.count()/10.0);
 
-//binary search 10k
+//binary search 1m
     start = timer::now();
     for(int i = 0; i < 1000000; i++){
         key = a[dist(eng)];
