@@ -4,13 +4,13 @@ Linear and binary search are O(n) and O(logn) algorithms respectively. The follo
 ---
 
 ### C++
-Linear Search Time:103626ns
-Binary Search Time:119.716ns
+Linear Search Time:103626ns  
+Binary Search Time:119.716ns  
 Ratio = 866:1
 
 ---
 
 ### Lua
-Linear Search Time: 1870000ns
-Binary Search Time: 1600ns
+Linear Search Time: 1870000ns  
+Binary Search Time: 1600ns  
 Ratio = 1168:1
