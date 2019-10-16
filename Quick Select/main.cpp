@@ -10,6 +10,7 @@ void swap(int i, int j, int* arr){
     arr[j] = temp;
 }
 
+//returns the index where the pivot was placed after partitioning
 int partition(int start, int end, int* arr){
     int left = start, right = end-1, pivot = end;
     while(true){
@@ -27,6 +28,7 @@ int partition(int start, int end, int* arr){
     return left;
 }
 
+//returns the index of the kth least element
 int quickSelect(int k, int* arr, int size){
     int start = 0, end = size-1, element = k-1;
     while(true){
@@ -41,6 +43,7 @@ int quickSelect(int k, int* arr, int size){
     return 0;
 }
 
+//returns an array of the k max numbers
 int* maxNumbers(int k,int* arr,int size){
     k = size - k;
     int pos = quickSelect(k,arr,size);
