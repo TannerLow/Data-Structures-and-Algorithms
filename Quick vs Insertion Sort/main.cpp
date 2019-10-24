@@ -33,7 +33,7 @@ int medianOf3(int* arr, int start, int end){
 
 int partition(int* arr, int start, int end){
     int left = start, right = end-1, pivot = end;
-    swap( medianOf3(arr,start,end), right+1, arr );
+    swap( medianOf3(arr,start,end), pivot, arr );
     while(true){
         while(arr[left] <= arr[pivot] && left < pivot)
             left++;
