@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//O(n) iterative solution to MSS
 int MSS(int* arr, int size){
     int sum = 0, mss = 0;
     for(int i = 0; i < size; i++){
@@ -15,6 +16,7 @@ int MSS(int* arr, int size){
     return mss;
 }
 
+//O(nlogn) recursive solution to MSS
 int slowMSS(int* arr, int left, int right){
     if(left < right){
         int median = (left+right)/2;
