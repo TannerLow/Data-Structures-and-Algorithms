@@ -53,6 +53,7 @@ int quickSelect(int k, int* arr, int size){
     return 0;
 }
 
+//returns k closest numbers to the median, inclusive in O(n+k)
 int* kClosestNumbers(int k, int* arr, int size){
     int pos = quickSelect(k,arr,size);
     int* kClosest = new int[k];
@@ -88,5 +89,5 @@ int main(){
     for(int i = 0; i < k; i++)
         cout << kClosest[i] + medianVal << " "; //O(k)
     cout << endl;
-    //total O(n + n + k) = O(n+k)
+    //total O(n + n+k + k) = O(n+k)
 }
